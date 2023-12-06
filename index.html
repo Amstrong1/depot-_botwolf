@@ -60,43 +60,83 @@
         </section>
     </header>
 
-    <section class="presentation second">
-        <div class="product-presentation">
-            <p class="new">Nouveau produit est disponible</p>
-            <h1>Le nouveau casque headBoost</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
-                odio eos beatae labore possimus. Pariatur ipsa, tempore optio
-                placeat expedita minus cupiditate nulla iure quis error. A vitae
-                quibusdam ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <button>Voir les specifications</button>
+    <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6" style="height: 100vh;">
+
+
+            <iframe style="border: none; height: 100%;" srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
+                  <script>
+                    window.botpressWebChat.init({
+                        composerPlaceholder: 'Chat with bot',
+                        'botConversationDescription': 'This chatbot was built surprisingly fast with Botpress',
+                        'botName': 'Name',
+                        'botId': '002eacad-c0cb-416b-9de0-9f474fec39cb',
+                        'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
+                        'messagingUrl': 'https://messaging.botpress.cloud',
+                        'clientId': '002eacad-c0cb-416b-9de0-9f474fec39cb',
+                        'enableConversationDeletion': true,
+                        'showPoweredBy': true,
+                        'className': 'webchatIframe',
+                        'containerWidth': '100%25',
+                        'layoutWidth': '100%50',
+                        'hideWidget': true,
+                        'showCloseButton': false,
+                        'disableAnimations': true,
+                        'closeOnEscape': false,
+                        'showConversationsButton': false,
+                        'enableTranscriptDownload': false,
+                        'stylesheet':'https://webchat-styler-css.botpress.app/prod/code/3fcd3e4e-d5bc-4bf5-8699-14b621b3ada2/v31782/style.css'
+                        
+                    });
+                  window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+                  </script></body>" width="40%" height="100%">
+                </iframe>
+
         </div>
-        <div class="image">
-            <img src="https://cdn.shopify.com/s/files/1/2654/0420/products/RECONSPARK_HEADSET_1_e87826ec-226a-4ce0-8782-42403e33a376_480x480.png?v=1571871155"
-                alt="">
+
+        <div>
+
         </div>
-    </section>
-    <footer>
-        <div class="column">
-            <h3>Aides</h3>
-            <p>contact@headboost.frs</p>
-            <p>Contactez-nous</p>
-            <p>Comment Acheter</p>
-        </div>
-        <div class="column">
-            <h3>Recrutement</h3>
-            <p>aboudousaliou@headboost.fr/p>
-            <p>Postuler en ligne</p>
-            <p>Comment faire ?</p>
-        </div>
-        <div class="column">
-            <h3>Réseau</h3>
-            <p>Facebook</p>
-            <p>Twitter</p>
-            <p>Instagram</p>
-        </div>
-    </footer>
+</body>
+
+<section class="presentation second">
+    <div class="product-presentation">
+        <p class="new">Nouveau produit est disponible</p>
+        <h1>Le nouveau casque headBoost</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
+            odio eos beatae labore possimus. Pariatur ipsa, tempore optio
+            placeat expedita minus cupiditate nulla iure quis error. A vitae
+            quibusdam ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <button>Voir les specifications</button>
+    </div>
+    <div class="image">
+        <img src="https://cdn.shopify.com/s/files/1/2654/0420/products/RECONSPARK_HEADSET_1_e87826ec-226a-4ce0-8782-42403e33a376_480x480.png?v=1571871155"
+            alt="">
+    </div>
+</section>
+<footer>
+    <div class="column">
+        <h3>Aides</h3>
+        <p>contact@headboost.frs</p>
+        <p>Contactez-nous</p>
+        <p>Comment Acheter</p>
+    </div>
+    <div class="column">
+        <h3>Recrutement</h3>
+        <p>aboudousaliou@headboost.fr/p>
+        <p>Postuler en ligne</p>
+        <p>Comment faire ?</p>
+    </div>
+    <div class="column">
+        <h3>Réseau</h3>
+        <p>Facebook</p>
+        <p>Twitter</p>
+        <p>Instagram</p>
+    </div>
+</footer>
 
 </body>
 
