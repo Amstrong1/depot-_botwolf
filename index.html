@@ -8,8 +8,7 @@
 
     <link rel="stylesheet" href="style.css">
     <title>Landing-page responsive </title>
-    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-    <script src="https://mediafiles.botpress.cloud/002eacad-c0cb-416b-9de0-9f474fec39cb/webchat/config.js"
+
         defer></script>
 
 </head>
@@ -62,36 +61,42 @@
 
     <div class="row">
         <div class="col-md-6"></div>
-        <div class="col-md-6" style="height: 100vh;">
+        <div class="col-md-6">
+
+            <div id="monElement">
+                <iframe style="border: none; " srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
+                    <script>
+                      window.botpressWebChat.init({
+                          composerPlaceholder: 'writing with chatwolf ',
+                          'botConversationDescription': '',
+                          'botName': 'Wolftbot expertise',
+                          'botId': '002eacad-c0cb-416b-9de0-9f474fec39cb',
+                          'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
+                          'messagingUrl': 'https://messaging.botpress.cloud',
+                          'clientId': '002eacad-c0cb-416b-9de0-9f474fec39cb',
+                          'enableConversationDeletion': true,
+                          'showPoweredBy': false,
+                          'className': 'webchatIframe',
+                          'containerWidth': '100%25',
+                          'layoutWidth': '100%50',
+                          'hideWidget': true,
+                          'showCloseButton': false,
+                          'disableAnimations': true,
+                          'closeOnEscape': false,
+                          'showConversationsButton': false,
+                          'enableTranscriptDownload': false,
+                          'lazySocket': true,
+                          'themeName': 'prism',
+                          'stylesheet':'https://webchat-styler-css.botpress.app/prod/455e575c-5772-4573-8418-ddf3e93ab1b3/v72544/style.css'
+                          
+                      });
+                    window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+                    </script></body>" width="40%" height="100%">
+              </iframe>
+            </div>
 
 
-            <iframe style="border: none; height: 100%;" srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
-                  <script>
-                    window.botpressWebChat.init({
-                        composerPlaceholder: 'Chat with bot',
-                        'botConversationDescription': 'This chatbot was built surprisingly fast with Botpress',
-                        'botName': 'Name',
-                        'botId': '002eacad-c0cb-416b-9de0-9f474fec39cb',
-                        'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
-                        'messagingUrl': 'https://messaging.botpress.cloud',
-                        'clientId': '002eacad-c0cb-416b-9de0-9f474fec39cb',
-                        'enableConversationDeletion': true,
-                        'showPoweredBy': true,
-                        'className': 'webchatIframe',
-                        'containerWidth': '100%25',
-                        'layoutWidth': '100%50',
-                        'hideWidget': true,
-                        'showCloseButton': false,
-                        'disableAnimations': true,
-                        'closeOnEscape': false,
-                        'showConversationsButton': false,
-                        'enableTranscriptDownload': false,
-                        'stylesheet':'https://webchat-styler-css.botpress.app/prod/code/3fcd3e4e-d5bc-4bf5-8699-14b621b3ada2/v31782/style.css'
-                        
-                    });
-                  window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
-                  </script></body>" width="40%" height="100%">
-                </iframe>
+         
 
         </div>
 
