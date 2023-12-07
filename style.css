@@ -202,3 +202,32 @@ footer p:hover{
         width: 80%;
     }
 }
+
+
+#monElement {
+   
+    position: fixed !important;
+    top: 25px;
+    right: -950;
+    height: 100%;
+    width: 100%;
+    bottom: 35px;
+    margin-left: 850px; /* Ajoutez une marge pour plus d'espace par rapport au bord de l'écran */
+  }
+  
+  /* Ajoutez des styles supplémentaires selon vos besoins */
+  #monElement {
+    height: auto;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    height: 100%;
+  }
+  
+  /* Ajoutez des styles pour rendre l'élément responsive */
+  @media screen and (max-width: 600px) {
+    #monElement {
+      position: static; /* Change la position à statique sur des écrans plus petits */
+      margin-top: 10px; /* Ajoutez une marge en haut pour un espacement sur des écrans plus petits */
+    }
+  }
